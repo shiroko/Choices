@@ -2277,6 +2277,7 @@
             // @todo integrate with Store
             this._searcher.reset();
             if (this._isSearching) {
+                this._currentValue = '';
                 this._handleSearch(this.input.value);
             }
             return this;
