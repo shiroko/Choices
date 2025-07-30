@@ -593,6 +593,9 @@ class Choices {
 
     // @todo integrate with Store
     this._searcher.reset();
+    if (this._isSearching) {
+      this._handleSearch(this.input.value);
+    }
 
     return this;
   }
@@ -768,6 +771,9 @@ class Choices {
 
     // @todo integrate with Store
     this._searcher.reset();
+    if (this._isSearching) {
+      this._handleSearch(this.input.value);
+    }
 
     return this;
   }

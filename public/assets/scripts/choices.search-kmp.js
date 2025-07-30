@@ -2125,6 +2125,9 @@
             });
             // @todo integrate with Store
             this._searcher.reset();
+            if (this._isSearching) {
+                this._handleSearch(this.input.value);
+            }
             return this;
         };
         /**
@@ -2273,6 +2276,9 @@
             });
             // @todo integrate with Store
             this._searcher.reset();
+            if (this._isSearching) {
+                this._handleSearch(this.input.value);
+            }
             return this;
         };
         Choices.prototype.refresh = function (withEvents, selectFirstOption, deselectAll) {
